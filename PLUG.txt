@@ -1,0 +1,6 @@
+flash (firmware)
+---
+GND - IO0
+
+---
+ESP32cam	FDTI
