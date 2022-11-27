@@ -1,0 +1,5 @@
+// Erasing flash memory:
+esptool.py --port <Your serial port> erase_flash
+
+// Writing flash memory:
+esptool.py --port <Your serial port> write_flash <Address> <path_to_firmware>

@@ -1,2 +1,5 @@
+from machine import Pin
+import time
 
-print("Hello from boot")
+led = Pin(2, Pin.OUT)
+print("Hello from machine boot")

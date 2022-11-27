@@ -1,2 +1,2 @@
 
-print("Hello from main")
+print("Network imported")
