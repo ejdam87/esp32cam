@@ -1,5 +1,11 @@
 from machine import Pin
+import camera
 import time
 
-led = Pin(2, Pin.OUT)
-print("Hello from machine boot")
+led = Pin(4, Pin.OUT)
+
+while True:
+    led.value(1)
+    time.sleep(1)
+    led.value(0)
+    time.sleep(1)

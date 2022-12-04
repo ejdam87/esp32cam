@@ -1,6 +1,13 @@
-flash (firmware)
+Pin connection
 ---
-GND - IO0
 
----
-ESP32cam	FDTI
+	ESP32cam		FDTI
+	---			---
+
+	GND - IO0
+	(firmware flash)
+
+1.	5V			5V
+2.	GND			GND
+3.	U0R			TXD
+4.	U0T			RXD
