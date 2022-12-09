@@ -1,0 +1,2 @@
+--> board cannot connect to the network ( possible voltage problem ? )
+--> cannot get photo from on-board memory ( some encoding error in log )
