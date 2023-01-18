@@ -1,10 +1,15 @@
+import wifi
+import webserver
 
-import camera
+## SSID & PASSWORD of your network
+## ---
+NET_PATH = "credentials.secret"
 
-camera.init(0)
-buf = camera.capture()
-with open("photo.jpg", "wb") as f:
-    f.write(buf)
+with open( NET_PATH, "r" ) as f:
+    SSID, PASSWD = f.read( ).split( "\n" )
+## ---
 
-with open("photo.jpg", "rb") as f:
-    print(f.read() == buf)
+wlan = wifi.connect( SSID, PASSWD )
+print( "Connected" )
+
+webserver.run( )

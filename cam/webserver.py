@@ -8,21 +8,13 @@ import uasyncio as asyncio
 led = machine.Pin(4, machine.Pin.OUT)
 app = picoweb.WebApp('app')
 
-import ulogging as logging
-logging.basicConfig(level=logging.INFO)
-log = logging.getLogger('app')
-
-
 @app.route('/')
 def index(req, resp):
 
-    # parse query string
-    req.parse_qs()
-    flash = req.form.get('flash', 'false')
-    if flash == 'true':
-        led.on()
+    ## yield from resp.awrite( "Hi" )
+    led.on()
 
-    camera.init()
+    camera.init( 0 )
 
     # wait for sensor to start and focus before capturing image
     await asyncio.sleep(2)
@@ -39,4 +31,4 @@ def index(req, resp):
 
 
 def run():
-    app.run(host='0.0.0.0', port=80, debug=True)
+    app.run( host="0.0.0.0", port=80, debug=True )

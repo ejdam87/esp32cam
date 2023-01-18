@@ -1,0 +1,19 @@
+# Ignore all
+*
+
+# Unignore all dirs
+!*/
+
+# Unignore .txt, .py, .json
+!*.txt
+!*.py
+!*.json
+
+# Unignore markup
+!*.ad
+!*.adoc
+!*.md
+!*.MD
+
+# Unignore .gitignore and .clang-format
+!.gitignore

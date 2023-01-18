@@ -6,11 +6,11 @@ led = Pin(4, Pin.OUT)
 
 TABLE = "morse_table.json"
 
-f = open(TABLE, "r")
-translate = json.loads(f.read())
+f = open( TABLE, "r" )
+translate = json.loads( f.read() )
 f.close()
 
-print("Morse table parsed!")
+print( "Morse table parsed!" )
 
 LONG  = 1
 SHORT = 0
