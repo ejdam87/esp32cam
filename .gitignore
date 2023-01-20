@@ -4,10 +4,11 @@
 # Unignore all dirs
 !*/
 
-# Unignore .txt, .py, .json
+# Unignore files
 !*.txt
 !*.py
 !*.json
+!*.jpg
 
 # Unignore markup
 !*.ad
