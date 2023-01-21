@@ -1,6 +1,5 @@
 # esp32-cam board
-
-![https://github.com/ejdam87/esp32cam/blob/master/photos/cover.jpeg](Cover photo)
+![Cover image](https://github.com/ejdam87/esp32cam/blob/master/photos/cover.jpeg)
 
 ## Repository consists of several parts:
 - micropython **firmware** ( already built .bin file in firmware directory )
@@ -9,7 +8,7 @@
 
 ## Camera setup
 - cable connection is described in file **plug.txt**
-- to program the board I used **MU editor**
+- to program the board I used [MU editor](https://codewith.mu/)
 - to connect the board to PC via serial port I used **FTDI programmer** ( little board with USB present )
 - as a source of power I used classic **phone powerbank** ( while programming, board is getting power from your PC )
 
